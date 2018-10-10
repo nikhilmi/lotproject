@@ -1,0 +1,31 @@
+....database create query.....
+create database LOT_db;
+
+
+....database use query....
+use LOT_db;
+
+..........table create query............
+
+create table LOT_FACT (LOTID varchar(30) not null unique primary key, SALES_ORDER_NUMBER varchar(16), 
+                            COMPLETION_CLASS varchar(3) not null, ACTIVE_FLAG varchar(1) not null, 
+                            CUSTOMER_ID bigint(10));
+
+
+
+insert into LOT_FACT values("2SQT34020.1","8020026842:07:01","WIP","Y",3000001878);
+insert into LOT_FACT values("2SQT34020.2","8020026843:08:02","WIP","Y",3000001978);
+insert into LOT_FACT values("2SQT34020.3","8020026844:09:03","WIP","Y",3000002078);
+insert into LOT_FACT values("2SQT34020.4","8020026845:10:04","WIP","Y",3000002178);
+insert into LOT_FACT values("2SQT34020.5","8020026846:11:05","WIP","Y",3000002278);
+
+
+insert into LOT_FACT values("2SQT34020.6","8020026846:11:05","WIP","N",3000002278);
+
+insert into LOT_FACT (LOTID,SALES_ORDER_NUMBER,COMPLETION_CLASS,ACTIVE_FLAG) values("2SQT34020.7","8020026846:11:05","WIP","Y");
+
+insert into LOT_FACT values("2SQT34020.8","8020026846:11:05","END","Y",3000001878);
+
+insert into LOT_FACT (LOTID,COMPLETION_CLASS,ACTIVE_FLAG,CUSTOMER_ID) values("2SQT34020.9","WIP","Y",3000001878);
+
+insert into LOT_FACT (LOTID,COMPLETION_CLASS,ACTIVE_FLAG) values("2SQT34021.1","END","N");

@@ -23,6 +23,5 @@ public class LotDAOHibernateImpl implements LotDAO{
 		bean1=(List<LotDto>) query.list();
 		return bean;
 	}
-	
 
 }

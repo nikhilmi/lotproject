@@ -15,5 +15,6 @@ public class LotServiceImpl implements LotService{
 	public LotDto getId(LotDto bean) {
 		return lotdao.getId(bean);
 	}
+	
 
 }

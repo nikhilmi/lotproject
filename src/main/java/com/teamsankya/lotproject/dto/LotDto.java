@@ -21,6 +21,7 @@ public class LotDto implements Serializable {
 	public String getLotId() {
 		return lotId;
 	}
+	
 
 	public void setLotId(String lotId) {
 		this.lotId = lotId;

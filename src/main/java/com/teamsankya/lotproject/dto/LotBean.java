@@ -7,22 +7,53 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.NotFound;
+import org.springframework.lang.NonNull;
+
+/**
+ * 
+ * The {@link LotBean} implements {@link Serializable}.
+ * Constructor - created NoArgument Constructor.
+ * overriden toString method. 
+ * {@link Entity} - Specifies that the class is an entity,this annotation is applied to the entity class.
+ * {@link Table}  - Specifies the primary table for the annotated entity.       
+ * {@link Id}     - Specifies mapped column of the entity is assumed to be the primary key of the primary table.     
+ * {@link Column} - Specifies the mapped column for a persistent property or field.   
+ * 
+ * 
+ * @author Yasar 
+ */
+
 @Entity
-@Table
-public class LotDto implements Serializable {
+@Table(name="lot_fact")
+public class LotBean implements Serializable {
 	@Id
-	@Column
+	@Column(name ="lotId")
 	private String lotId;
+	
+	
+	@Column(name ="sales_order_number")
+	
 	private String salesOrderNumber;
+	
+	@Column(name ="completion_class", nullable=false)
 	private String completionClass;
+	
+	@Column(name ="active_flag", nullable=false)
 	private String activeFlag;
+	
+	
+	@Column(name ="customer_id")
 	private long customerId;
 
 	public String getLotId() {
 		return lotId;
 	}
 
-	public void setLotId(String lotId) {
+	public void setLotId(String lotId) { 
+		if(lotId==null) {
+			 throw new RuntimeException();
+		}
 		this.lotId = lotId;
 	}
 

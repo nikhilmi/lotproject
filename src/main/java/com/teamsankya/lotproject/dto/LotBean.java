@@ -19,7 +19,7 @@ import org.springframework.lang.NonNull;
  * {@link Table}  - Specifies the primary table for the annotated entity.       
  * {@link Id}     - Specifies mapped column of the entity is assumed to be the primary key of the primary table.     
  * {@link Column} - Specifies the mapped column for a persistent property or field.   
- * 
+ * Runtime Exception extended for LotIdException.
  * 
  * @author Yasar 
  */
@@ -52,7 +52,7 @@ public class LotBean implements Serializable {
 
 	public void setLotId(String lotId) { 
 		if(lotId==null) {
-			 throw new RuntimeException();
+			 throw new LotIdException("LotId cannot Be Created");
 		}
 		this.lotId = lotId;
 	}

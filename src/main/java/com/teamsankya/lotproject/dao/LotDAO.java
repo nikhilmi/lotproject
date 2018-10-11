@@ -1,8 +1,8 @@
-package com.teamsankya.lotproject.service;
+package com.teamsankya.lotproject.dao;
 
 import com.teamsankya.lotproject.dto.LotBean;
 
-public interface LotService {
+public interface LotDAO {
 	public LotBean getId(LotBean bean);
 	
 }

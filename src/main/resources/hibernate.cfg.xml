@@ -13,7 +13,7 @@
 		<property name="hibernate.connection.autocommit">true</property>
 		
 		
-		<mapping class="com.teamsankya.lotproject.dto.LotIdBean"/>
+		<mapping class="com.teamsankya.lotproject.dto.LotBean"/>
 		
 	</session-factory>
 </hibernate-configuration>

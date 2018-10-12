@@ -31,7 +31,7 @@ public class LotUtil {
 				String s = trim(lotId);
 				boolean res = checkSpace(s);
 				if (res == false) {
-					 throw new LotIdException("invalid lot id");
+					 throw new LotIdException("syntex error in lot id");
 				}
 				String finalRes = toUppercase(s);
 				return finalRes;

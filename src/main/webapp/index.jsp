@@ -26,7 +26,7 @@ function closeMe()
 </head>
 <body>
 
-<form name="myForm" action="js"
+<form name="myForm" action="getid"
 onsubmit="return validateForm()" method="get">
 <label>Enter Lot Id*:</label>    
      <input type="text" value="" name="id" style="text-transform: uppercase"  maxlength="30"><br><br>

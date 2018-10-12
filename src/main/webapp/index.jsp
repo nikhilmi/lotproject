@@ -4,7 +4,7 @@
 <title>lot project</title>
 </head>
 <body>
-	<form name="myForm" onsubmit="validateID()">
+	<form name="myForm" action="getid" onsubmit="validateID()" method="get">
 		<label>Enter Lot Id*:</label> <input type="text" value="" name="id"
 			style="text-transform: uppercase" maxlength="30"><br> <br>
 		<input type="submit" value="Submit"> <input type="button"

@@ -9,11 +9,39 @@
 <body>
 <h1>Failure</h1>
 <p>${bean}</p>
+    <div align="right">
+    <input type="button" value="Close" onclick="closeMe()"/>  <button onclick="goBack()">Back</button>
+</div>
+
+
+
+    <table>
+
+    <tr>
+        <td>
+            <p>. A valid lot id should have the following three attributes:should be a PO lot
+                with sale order tagged in parmis/siview/insite and is available in WIP
+               . If the lot id above 3 attributes and still not available,please contact IT HelpDesk team.
+               . Any change made to the lot attributes would take ~6 to 8 hrs to refresh into PRF System 
+            </p>
+
+
+        </td>
+    </tr>
+</table>
+
+
+
 <script>
-function closeMe() {
-	window.open('/', '_self', '');
-	window.close();
+    function closeMe()
+{
+    window.open('/', '_self', '');
+    window.close();
 }
+function goBack(){
+    window.history.back();
+}
+
 </script>
 </body>
 </html>

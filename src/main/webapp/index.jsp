@@ -4,30 +4,33 @@
 <title>lot project</title>
 </head>
 <body>
-	<form name="myForm" action="getid" onsubmit="validateID()" method="get">
-		<label>Enter Lot Id*:</label> <input type="text" value="" name="id"
-			style="text-transform: uppercase" maxlength="30"><br> <br>
-		<input type="submit" value="Submit"> <input type="button"
-			value="Close" onclick="closeMe()" />
-	</form>
-
 	<script>
-		function validateID() {
+function validateForm() {
+    var x = document.forms["myForm"]["id"].value;
+    if (x == "") {
+        alert("pls give lot id......");
+        return false;
+    
+    }else if(x.indexOf(' ') > -1){
+        alert("pls give proper lot id....")
+return false;
+    }
+    return true; 
+}
+function closeMe()
+{
+    window.open('/', '_self', '');
+    window.close();
+}
+</script>
+</head>
+<body>
 
-			var x = document.forms["myForm"]["id"].value;
-			if (x == null || x == "") {
-				alert("Pls enter lot id");
-				return false;
-			} else if (x.indexOf(' ') > -1) {
-				alert("pls give proper lot id....")
-				return false;
-			}
-			return true;
-		}
-		function closeMe() {
-			window.open('/', '_self', '');
-			window.close();
-		}
-	</script>
+<form name="myForm" action="js"
+onsubmit="return validateForm()" method="get">
+<label>Enter Lot Id*:</label>    
+     <input type="text" value="" name="id" style="text-transform: uppercase"  maxlength="30"><br><br>
+               <input type="submit" value="Submit" >  <input type="button" value="Close" onclick="closeMe()"/>
+        </form>
 </body>
 </html>

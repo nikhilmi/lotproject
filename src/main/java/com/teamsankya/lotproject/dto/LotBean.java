@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import org.hibernate.annotations.NotFound;
 import org.springframework.lang.NonNull;
 
+import com.teamsankya.lotproject.exception.LotIdException;
+
 /**
  * 
  * The {@link LotBean} implements {@link Serializable}.

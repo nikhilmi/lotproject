@@ -1,4 +1,4 @@
-package com.teamsankya.lotproject.dto;
+package com.teamsankya.lotproject.exception;
 
 public class LotIdException extends RuntimeException {
 	public LotIdException(String message) {

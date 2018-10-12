@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Failure</h1>
-<p>${bean}</p>
+<h1>Lot Id:${bean}</h1>
+<p><h1>lot status:</h1>${msg1}</p>
     <div align="right">
     <input type="button" value="Close" onclick="closeMe()"/>  <button onclick="goBack()">Back</button>
 </div>

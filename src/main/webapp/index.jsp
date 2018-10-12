@@ -29,7 +29,7 @@ function closeMe()
 <form name="myForm" action="getid"
 onsubmit="return validateForm()" method="get">
 <label>Enter Lot Id*:</label>    
-     <input type="text" value="" name="id" style="text-transform: uppercase"  maxlength="30"><br><br>
+     <input type="text" value="" name="lotId" style="text-transform: uppercase"  maxlength="30"><br><br>
                <input type="submit" value="Submit" >  <input type="button" value="Close" onclick="closeMe()"/>
         </form>
 </body>

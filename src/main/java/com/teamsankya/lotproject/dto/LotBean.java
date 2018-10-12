@@ -35,7 +35,6 @@ public class LotBean implements Serializable {
 	
 	
 	@Column(name ="sales_order_number")
-	
 	private String salesOrderNumber;
 	
 	@Column(name ="completion_class", nullable=false)

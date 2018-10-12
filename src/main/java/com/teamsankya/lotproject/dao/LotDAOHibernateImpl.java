@@ -1,5 +1,6 @@
 package com.teamsankya.lotproject.dao;
 
+import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -11,7 +12,12 @@ public class LotDAOHibernateImpl implements LotDAO{
 	@Override
 	public LotBean getId(String id) {
 		System.out.println("inside DAOImplementation");
-		LotBean bean = sessionFactory.getCurrentSession().get(LotBean.class, id);
+		LotBean bean;
+		try {
+			bean = sessionFactory.getCurrentSession().get(LotBean.class, id);
+		} catch (HibernateException e) {
+			bean = sessionFactory.openSession().get(LotBean.class, id);
+		}
 		return bean;
 	}
 

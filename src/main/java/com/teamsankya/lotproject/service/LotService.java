@@ -1,8 +1,8 @@
 package com.teamsankya.lotproject.service;
 
-import com.teamsankya.lotproject.dto.LotDto;
+import com.teamsankya.lotproject.dto.LotBean;
 
 public interface LotService {
-	public LotDto getId(LotDto bean);
+	public LotBean getId(LotBean bean);
 	
 }

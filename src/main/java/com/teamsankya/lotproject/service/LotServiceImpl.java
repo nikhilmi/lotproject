@@ -1,7 +1,7 @@
 package com.teamsankya.lotproject.service;
 
 import com.teamsankya.lotproject.dao.LotDAO;
-import com.teamsankya.lotproject.dto.LotDto;
+import com.teamsankya.lotproject.dto.LotBean;
 
 public class LotServiceImpl implements LotService{
 	
@@ -12,7 +12,7 @@ public class LotServiceImpl implements LotService{
 	}
 	
 	@Override
-	public LotDto getId(LotDto bean) {
+	public LotBean getId(LotBean bean) {
 		return lotdao.getId(bean);
 	}
 	

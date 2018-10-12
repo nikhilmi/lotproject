@@ -1,8 +1,8 @@
 package com.teamsankya.lotproject.dao;
 
-import com.teamsankya.lotproject.dto.LotDto;
+import com.teamsankya.lotproject.dto.LotBean;
 
 public interface LotDAO {
-	public LotDto getId(LotDto bean);
+	public LotBean getId(LotBean bean);
 	
 }

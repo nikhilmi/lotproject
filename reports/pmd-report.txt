@@ -1,0 +1,13 @@
+src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:5:					headerCommentRequirement Required
+src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:6:					Avoid modifiers which are implied by the context
+src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:6:					Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:6:					publicMethodCommentRequirement Required
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:9:		Each class should declare at least one constructor
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:9:		headerCommentRequirement Required
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:11:	fieldCommentRequirement Required
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:13:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:13:	publicMethodCommentRequirement Required
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:14:	System.out.println is used
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:17:	Found 'DD'-anomaly for variable 'bean' (lines '17'-'19').
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:17:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:19:	Potential violation of Law of Demeter (method chain calls)

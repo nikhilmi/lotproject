@@ -1,13 +1,24 @@
-src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:5:					headerCommentRequirement Required
-src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:6:					Avoid modifiers which are implied by the context
-src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:6:					Avoid variables with short names like id
-src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:6:					publicMethodCommentRequirement Required
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:9:		Each class should declare at least one constructor
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:9:		headerCommentRequirement Required
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:11:	fieldCommentRequirement Required
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:13:	Avoid variables with short names like id
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:13:	publicMethodCommentRequirement Required
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:14:	System.out.println is used
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:17:	Found 'DD'-anomaly for variable 'bean' (lines '17'-'19').
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:17:	Potential violation of Law of Demeter (method chain calls)
-src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:19:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:15:	Header comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:18:	Field comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:20:	Field comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:20:	To avoid mistakes add a comment at the beginning of the LOGGER field if you want a default access modifier
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:20:	Use explicit scoping instead of the default package private level
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:23:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:32:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:34:	Avoid using if...else statements without curly braces
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:34:	This statement should have braces
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:10:	Avoid unused imports such as 'org.hibernate.annotations.NotFound'
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:11:	Avoid unused imports such as 'org.springframework.lang.NonNull'
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:15:	Comment is too large: Too many lines
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:20:	Comment is too large: Line too long
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:22:	Comment is too large: Line too long
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:23:	Comment is too large: Line too long
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:31:	The class 'LotBean' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=10, WMC=12)
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:34:	Field comments are required
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:38:	Field comments are required
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:41:	Field comments are required
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:44:	Field comments are required
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:48:	Field comments are required
+src/main/java/com/teamsankya/lotproject/exception/LotIdException.java:3:	Header comments are required
+src/main/java/com/teamsankya/lotproject/exception/LotIdException.java:4:	Public method and constructor comments are required

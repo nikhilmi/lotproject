@@ -28,10 +28,12 @@ public class LotController {
 	@Autowired
 	@Qualifier("service")
 	private LotService lotService;
+
 	
 	private LotUtil  lotUtil = new LotUtil();
 	
 	final static Logger LOGGER=Logger.getLogger(LotController.class);
+
 
 	/**
 	 * 
@@ -40,23 +42,26 @@ public class LotController {
 	 * @return success
 	 */
 	@RequestMapping(path = "getid", method = RequestMethod.GET)
-	public String getLOTId(ModelMap map,String lotId) {
+	public String getLOTId(ModelMap map, String lotId) {
 		LOGGER.info("inside lot controller");
 		LOGGER.info(lotId);
+
 		String validLotId= lotUtil.validate(lotId);
 		LotBean bean= lotService.getId(validLotId);
-		
-		map.addAttribute("bean",lotId);
+		map.addAttribute("bean", lotId);
+
 		map.addAttribute("msg", "All 3 attributes are for this lot is available..");
 		map.addAttribute("msg1", "Entered the lot id is invalid..");
-		if(bean==null) {
+		if (bean == null) {
 			return "Failure";
+
 		}
 		else
 		{
 		return "Success";
 		}
 	}	
+
 
 
 }

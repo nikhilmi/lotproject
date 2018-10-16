@@ -51,8 +51,10 @@ public class LotBean implements Serializable {
 		return lotId;
 	}
 
+	@SuppressWarnings("unused")
 	public void setLotId(String lotId) { 
-		if(lotId==null) {
+		char ch[] = lotId.toCharArray();
+		if(lotId==null&& ch.length>30) {
 			 throw new LotIdException("LotId cannot Be Created");
 		}
 		this.lotId = lotId;

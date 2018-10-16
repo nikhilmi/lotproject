@@ -17,7 +17,7 @@ public class LotController {
 	@Qualifier("service")
 	private LotService lotService;
 
-	final static Logger LOGGER = Logger.getLogger(LotController.class);
+	final static Logger LOGGER = Logger.getLogger(LotController.class); // NOPMD by hp on 10/16/18 2:56 PM
 
 	@RequestMapping(path = "getid", method = RequestMethod.GET)
 	public String getLOTId(ModelMap map, String lotId) {

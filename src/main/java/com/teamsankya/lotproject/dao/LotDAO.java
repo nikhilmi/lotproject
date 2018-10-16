@@ -4,5 +4,5 @@ import com.teamsankya.lotproject.dto.LotBean;
 
 public interface LotDAO {
 	public LotBean getId(String id);
-	
+
 }

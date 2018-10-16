@@ -49,7 +49,6 @@ public class LotController {
 		String validLotId= lotUtil.validate(lotId);
 		LotBean bean= lotService.getId(validLotId);
 		map.addAttribute("bean", lotId);
-
 		map.addAttribute("msg", "All 3 attributes are for this lot is available..");
 		map.addAttribute("msg1", "Entered the lot id is invalid..");
 		if (bean == null) {
@@ -58,7 +57,10 @@ public class LotController {
 		}
 		else
 		{
-		return "Success";
+			if(bean.getActiveFlag().equalsIgnoreCase("Y")) {
+				return "Success";
+			}
+		return "Failure";
 		}
 	}	
 

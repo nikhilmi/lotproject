@@ -6,12 +6,32 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.teamsankya.lotproject.dto.LotBean;
 
-public class LotDAOHibernateImpl implements LotDAO{
+/**
+ * Here we are implementing LotDAO interface. see org.hibernate.SessionFactory
+ * {@link Autowired} This is used for automatic dependency injection
+ * {@link Override} This is used for implementing abstract methods
+ * @author Praveen
+ */
+public class LotDAOHibernateImpl implements LotDAO {
+	/**
+	 * Default Constructor
+	 */
+	public LotDAOHibernateImpl() {
+		
+	}
+
+	/**
+	 * SessionFactory is usually created during application start up and kept for
+	 * later use.
+	 */
 	@Autowired
 	private SessionFactory sessionFactory;
+
+	/**
+	 * This method interacts with the database and get the bean.
+	 */
 	@Override
 	public LotBean getId(String id) {
-		System.out.println("inside DAOImplementation");
 		LotBean bean;
 		try {
 			bean = sessionFactory.getCurrentSession().get(LotBean.class, id);

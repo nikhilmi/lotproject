@@ -11,49 +11,50 @@ import org.hibernate.annotations.NotFound;
 import org.springframework.lang.NonNull;
 
 import com.teamsankya.lotproject.exception.LotIdException;
+import com.teamsankya.lotproject.util.ToStringImpl;
 
 /**
  * 
- * The {@link LotBean} implements {@link Serializable}.
- * Constructor - created NoArgument Constructor.
- * overriden toString method. 
- * {@link Entity} - Specifies that the class is an entity,this annotation is applied to the entity class.
- * {@link Table}  - Specifies the primary table for the annotated entity.       
- * {@link Id}     - Specifies mapped column of the entity is assumed to be the primary key of the primary table.     
- * {@link Column} - Specifies the mapped column for a persistent property or field.   
- * Runtime Exception extended for LotIdException.
+ * The {@link LotBean} implements {@link Serializable}. Constructor - created
+ * NoArgument Constructor. Used TOStringBuilder. {@link Entity} - Specifies that
+ * the class is an entity,this annotation is applied to the entity class.
+ * {@link Table} - Specifies the primary table for the annotated entity.
+ * {@link Id} - Specifies mapped column of the entity is assumed to be the
+ * primary key of the primary table. {@link Column} - Specifies the mapped
+ * column for a persistent property or field. Runtime Exception extended for
+ * LotIdException.
  * 
- * @author Yasar 
+ * @author Yasar
  */
 
 @Entity
-@Table(name="lot_fact")
+@Table(name = "lot_fact")
 public class LotBean implements Serializable {
 	@Id
-	@Column(name ="lotId")
+	@Column(name = "lotId")
 	private String lotId;
-	
-	
-	@Column(name ="sales_order_number")
+
+	@Column(name = "sales_order_number")
 	private String salesOrderNumber;
-	
-	@Column(name ="completion_class", nullable=false)
+
+	@Column(name = "completion_class", nullable = false)
 	private String completionClass;
-	
-	@Column(name ="active_flag", nullable=false)
+
+	@Column(name = "active_flag", nullable = false)
 	private String activeFlag;
-	
-	
-	@Column(name ="customer_id")
+
+	@Column(name = "customer_id")
 	private long customerId;
 
 	public String getLotId() {
 		return lotId;
 	}
 
-	public void setLotId(String lotId) { 
-		if(lotId==null) {
-			 throw new LotIdException("LotId cannot Be Created");
+	@SuppressWarnings("unused")
+	public void setLotId(String lotId) {
+		char ch[] = lotId.toCharArray();
+		if (lotId == null && ch.length > 30) {
+			throw new LotIdException("LotId cannot Be Created");
 		}
 		this.lotId = lotId;
 	}
@@ -92,8 +93,7 @@ public class LotBean implements Serializable {
 
 	@Override
 	public String toString() {
-		return "LotDto [lotId=" + lotId + ", salesOrderNumber=" + salesOrderNumber + ", completionClass="
-				+ completionClass + ", activeFlag=" + activeFlag + ", customerId=" + customerId + "]";
+		return ToStringImpl.toString(this);
 	}
 
 }

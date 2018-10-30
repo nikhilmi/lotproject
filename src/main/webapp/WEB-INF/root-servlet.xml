@@ -35,7 +35,7 @@ xsi:schemaLocation="
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/lot_db?createDatabaseIfNotExist=true" />
 		<property name="username" value="root" />
-		<property name="password" value="12345" />
+		<property name="password" value="admin" />
 	</bean>
 
 	<bean id="sessionFactory"

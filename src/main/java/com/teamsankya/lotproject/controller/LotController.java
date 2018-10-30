@@ -56,7 +56,7 @@ public class LotController {
 		}
 		else
 		{
-			if(bean.getActiveFlag().equalsIgnoreCase("Y")) {
+			if(bean.getActiveFlag().equalsIgnoreCase("Y")&& bean.getSalesOrderNumber()!=null && bean.getCompletionClass()!=null) {
 				return "Success";
 			}
 		return "Failure";

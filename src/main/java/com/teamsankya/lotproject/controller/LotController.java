@@ -45,7 +45,6 @@ public class LotController {
 	public String getLOTId(ModelMap map, String lotId) {
 		LOGGER.info("inside lot controller");
 		LOGGER.info(lotId);
-
 		String validLotId= lotUtil.validate(lotId);
 		LotBean bean= lotService.getId(validLotId);
 		map.addAttribute("bean", lotId);
@@ -63,7 +62,9 @@ public class LotController {
 		return "Failure";
 		}
 	}	
-
-
+	@RequestMapping(method=RequestMethod.GET, path="error")
+	public String errorPage() {
+		return "error";
+	}
 
 }

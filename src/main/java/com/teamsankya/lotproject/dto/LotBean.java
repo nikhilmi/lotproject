@@ -7,9 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.NotFound;
-import org.springframework.lang.NonNull;
-
 import com.teamsankya.lotproject.exception.LotIdException;
 import com.teamsankya.lotproject.util.ToStringImpl;
 

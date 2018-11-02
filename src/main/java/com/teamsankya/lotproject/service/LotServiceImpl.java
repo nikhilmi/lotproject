@@ -43,41 +43,42 @@ public class LotServiceImpl implements LotService {
 	public LotBean getId(String id) {
 		return lotdao.getId(id);
 	}
-	
-    /**
-     * This method will accept the string array of all the ids and will return
-     *  a List of LotBean objects.
-     *  It will validate all the ids by interacting with the LotUtil class.
-     *  Based on valiation it will then get the data for each id by interacting 
-     *  with the LotDAOHibernate class. 
-     *  After getting the data for each id, it will add it to the List Object.
-     *  Then it will return the List of LotBean Objects to the LotController class.
-     *  @return List<LotBean>
-	 *  @param  String  []
-	 *  
-     *  @author Samarpita Das
-     */
+
+	/**
+	 * This method will accept the string array of all the ids and will return a
+	 * List of LotBean objects. It will validate all the ids by interacting with the
+	 * LotUtil class. Based on valiation it will then get the data for each id by
+	 * interacting with the LotDAOHibernate class. After getting the data for each
+	 * id, it will add it to the List Object. Then it will return the List of
+	 * LotBean Objects to the LotController class.
+	 * 
+	 * @return List<LotBean>
+	 * @param String
+	 *            []
+	 * 
+	 * @author Samarpita Das
+	 */
 	public List<LotBean> getIds(String ids[]) {
 		LotBean bean;
 		List<LotBean> list = new ArrayList<LotBean>();
 		for (String idValue : ids) {
 
 			String id = lotUtil.toValidate(idValue);
-
 			boolean res = lotUtil.validateAll(id);
 
 			if (!res) {
 				bean = new LotBean();
-				bean.setLotId(idValue);
+				bean.setLotId(id);
 			} else {
-				bean = lotdao.getId(idValue);
+				bean = lotdao.getId(id);
+				if (bean == null) {
+					bean = new LotBean();
+					bean.setLotId(id);
+				}
 			}
-
 			list.add(bean);
-
 		}
 		return list;
-
-	}//end of getIds
+	}// end of getIds
 
 }

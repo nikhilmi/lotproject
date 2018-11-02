@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import com.teamsankya.lotproject.dao.LotDAO;
 import com.teamsankya.lotproject.dto.LotBean;
@@ -52,7 +53,7 @@ public class LotServiceImpl implements LotService {
      *  After getting the data for each id, it will add it to the List Object.
      *  Then it will return the List of LotBean Objects to the LotController class.
      *  @return List<LotBean>
-	 *  @param  String []
+	 *  @param  String  []
 	 *  
      *  @author Samarpita Das
      */

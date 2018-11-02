@@ -1,6 +1,7 @@
 package com.teamsankya.lotproject.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,12 +77,10 @@ public class LotController {
 	public void fileUpload(@RequestParam("file") MultipartFile file) throws IOException {
 
 		String[] finalres = new String(file.getBytes()).split(",");
-		lotService.getIds(finalres);
+		List<LotBean> lotid=lotService.getIds(finalres);
 		
 		
-		/*for (String string : finalres) {
-			System.out.println(string);
-		}*/
+		
 	}
 
 }

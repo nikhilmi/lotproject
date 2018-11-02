@@ -1,7 +1,5 @@
 package com.teamsankya.lotproject.util;
 
-import org.springframework.stereotype.Service;
-
 import com.teamsankya.lotproject.exception.LotIdException;
 
 public class LotUtil {

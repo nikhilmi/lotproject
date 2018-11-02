@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -37,6 +36,8 @@ public class LotController {
 	@Qualifier("service")
 	private LotService lotService;
 
+	
+	
 	private LotUtil lotUtil = new LotUtil();
 
 	final static Logger LOGGER = Logger.getLogger(LotController.class);
@@ -73,13 +74,16 @@ public class LotController {
 		return "error";
 	}
 
-	@PostMapping("/uploadFile")
-	public void fileUpload(@RequestParam("file") MultipartFile file) throws IOException {
+	@RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+	public String fileUpload(@RequestParam("file")MultipartFile file,ModelMap map) throws IOException {
 
 		String[] finalres = new String(file.getBytes()).split(",");
 		List<LotBean> lotid=lotService.getIds(finalres);
 		
+		map.addAttribute("lotbean", lotid);
 		
+		return "FileUploadSuccess";
+	
 		
 	}
 

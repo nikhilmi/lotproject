@@ -5,7 +5,8 @@
 	version="3.1">
 	<display-name>lotproject</display-name>
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>FileUpload.jsp</welcome-file>
+		
 	</welcome-file-list>
 	<servlet>
 		<servlet-name>root</servlet-name>

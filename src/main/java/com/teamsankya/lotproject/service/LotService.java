@@ -1,5 +1,7 @@
 package com.teamsankya.lotproject.service;
 
+import java.util.List;
+
 import com.teamsankya.lotproject.dto.LotBean;
 
 /**
@@ -14,5 +16,7 @@ public interface LotService {
 	 * @return
 	 */
 	public LotBean getId(String id);
+
+	public List<LotBean> getIds(String ids[]);
 	
 }

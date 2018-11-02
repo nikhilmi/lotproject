@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Please upload a file which contains lot_id values.</h1>
-<form method="post" action="/uploadFile" enctype="multipart/form-data">
+<form method="post" action="./uploadFile" enctype="multipart/form-data">
 <input type="file" name="file"/>
 <input type="submit" ></input>
 </form>

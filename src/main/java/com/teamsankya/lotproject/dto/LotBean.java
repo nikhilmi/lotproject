@@ -80,6 +80,8 @@ public class LotBean implements Serializable {
 		this.activeFlag = activeFlag;
 	}
 
+	
+
 	public long getCustomerId() {
 		return customerId;
 	}
@@ -90,7 +92,15 @@ public class LotBean implements Serializable {
 
 	@Override
 	public String toString() {
+		return "LotBean [lotId=" + lotId + ", salesOrderNumber=" + salesOrderNumber + ", completionClass="
+				+ completionClass + ", activeFlag=" + activeFlag + ", customerId=" + customerId + "]";
+	}
+
+	/*@Override
+	public String toString() {
 		return ToStringImpl.toString(this);
 	}
+	*/
+	
 
 }

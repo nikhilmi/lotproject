@@ -70,34 +70,38 @@ public class LotUtil {
 		String finalRes = toUppercase(s);
 		return finalRes;
 	}
-    
+
 	/**
-	 * This method will accept a String lotId and will return String lotId.
-	 * It will remove the extra spaces after and before the String.
-	 *  After removing extra space it will convert the string to Uppercase.
-	 *  It will then return the String value to  LotServiceImpl class.
-	 *  @return String
-	 *  @param  String
-	 *  
-	 *  @author Samarpita Das
+	 * This method will accept a String lotId and will return String lotId. It will
+	 * remove the extra spaces after and before the String. After removing extra
+	 * space it will convert the string to Uppercase. It will then return the String
+	 * value to LotServiceImpl class.
+	 * 
+	 * @return String
+	 * @param String
+	 * 
+	 * @author Samarpita Das
 	 */
 	public String toValidate(String lotId) {
 
 		String s = trim(lotId);
-
+		System.out.println("inside to validate");
+		System.out.println(s);
 		String finalRes = toUppercase(s);
+		System.out.println(finalRes);
 		return finalRes;
 
 	}
-	
+
 	/**
-	 * This method will accept a String lotId and will return result in boolean. 
-	 * It will check for all the conditions lotid should satisfy.
-	 * It will then return boolean result to LotServiceImpl class.
-	 *  @return boolean
-	 *  @param  String
-	 *  
-	 *  @author Samarpita Das
+	 * This method will accept a String lotId and will return result in boolean. It
+	 * will check for all the conditions lotid should satisfy. It will then return
+	 * boolean result to LotServiceImpl class.
+	 * 
+	 * @return boolean
+	 * @param String
+	 * 
+	 * @author Samarpita Das
 	 */
 	public boolean validateAll(String lotId) {
 		boolean res = checkSpace(lotId);
@@ -106,6 +110,7 @@ public class LotUtil {
 		if (res == true && isValid == true && noOfChar == true) {
 			return true;
 		}
+
 		return false;
 	}
 }

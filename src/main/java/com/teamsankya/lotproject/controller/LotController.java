@@ -29,15 +29,12 @@ import com.teamsankya.lotproject.util.LotUtil;
  * 
  * @author Prathibha
  */
-
 @Controller
 public class LotController {
 	@Autowired
 	@Qualifier("service")
 	private LotService lotService;
 
-	
-	
 	private LotUtil lotUtil = new LotUtil();
 
 	final static Logger LOGGER = Logger.getLogger(LotController.class);
@@ -74,17 +71,33 @@ public class LotController {
 		return "error";
 	}
 
+	/**
+	 * 
+	 * This method will accept the file which is being uploaded through
+	 * 'FileUpload.jsp'. Here data from the file is extracted using bytes[] and
+	 * converted to String[] internally and stored in 'finalres'. Then data
+	 * containing List of Lot Id in that file is being passed to service method, at
+	 * last a processed list of filtered Lot Id is returned from service class and
+	 * those are being stored in an 'lotbean' attribute. Finally the
+	 * 'FileUploadSuccess' jsp page is being returned
+	 * 
+	 * @param map
+	 * 
+	 * @param file
+	 * 
+	 * @return FileUploadSuccess
+	 * @author MI_NIKHIL
+	 */
 	@RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
-	public String fileUpload(@RequestParam("file")MultipartFile file,ModelMap map) throws IOException {
+	public String fileUpload(@RequestParam("file") MultipartFile file, ModelMap map) throws IOException {
 
 		String[] finalres = new String(file.getBytes()).split(",");
-		List<LotBean> lotid=lotService.getIds(finalres);
-		
+		List<LotBean> lotid = lotService.getIds(finalres);
+
 		map.addAttribute("lotbean", lotid);
-		
+
 		return "FileUploadSuccess";
-	
-		
+
 	}
 
 }

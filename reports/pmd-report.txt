@@ -1,24 +1,257 @@
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:15:	Header comments are required
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:18:	Field comments are required
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:20:	Field comments are required
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:20:	To avoid mistakes add a comment at the beginning of the LOGGER field if you want a default access modifier
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:20:	Use explicit scoping instead of the default package private level
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:23:	Public method and constructor comments are required
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:32:	A method should have only one exit point, and that should be the last statement in the method
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:34:	Avoid using if...else statements without curly braces
-src/main/java/com/teamsankya/lotproject/controller/LotController.java:34:	This statement should have braces
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:10:	Avoid unused imports such as 'org.hibernate.annotations.NotFound'
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:11:	Avoid unused imports such as 'org.springframework.lang.NonNull'
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:15:	Comment is too large: Too many lines
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:20:	Comment is too large: Line too long
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:22:	Comment is too large: Line too long
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:23:	Comment is too large: Line too long
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:31:	The class 'LotBean' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=10, WMC=12)
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:34:	Field comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:20:	Comment is too large: Too many lines
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:33:	Each class should declare at least one constructor
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:36:	Field comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:36:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:38:	Field comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:38:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:38:	Private field 'lotUtil' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:40:	Field comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:40:	To avoid mistakes add a comment at the beginning of the LOGGER field if you want a default access modifier
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:40:	Use explicit scoping instead of the default package private level
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:49:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:49:	Parameter 'map' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:49:	The method 'getLOTId(ModelMap, String)' has a NCSS line count of 14.
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:52:	Local variable 'validLotId' could be declared final
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:53:	Local variable 'bean' could be declared final
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:58:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:62:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:63:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:70:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:74:	Comment is too large: Too many lines
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:92:	Parameter 'file' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:92:	Parameter 'map' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:94:	Local variable 'finalres' could be declared final
+src/main/java/com/teamsankya/lotproject/controller/LotController.java:95:	Local variable 'lotid' could be declared final
+src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:16:	Avoid modifiers which are implied by the context
+src/main/java/com/teamsankya/lotproject/dao/LotDAO.java:16:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:19:	Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:19:	Document empty constructor
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:28:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:34:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:34:	Parameter 'id' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:37:	Found 'DD'-anomaly for variable 'bean' (lines '37'-'39').
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/teamsankya/lotproject/dao/LotDAOHibernateImpl.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:11:	Avoid unused imports such as 'com.teamsankya.lotproject.util.ToStringImpl'
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:13:	Comment is too large: Too many lines
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:29:	Classes implementing Serializable should set a serialVersionUID
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:29:	Each class should declare at least one constructor
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:29:	The class 'LotBean' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=9, WMC=9)
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:32:	Field comments are required
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:35:	Field comments are required
 src/main/java/com/teamsankya/lotproject/dto/LotBean.java:38:	Field comments are required
 src/main/java/com/teamsankya/lotproject/dto/LotBean.java:41:	Field comments are required
 src/main/java/com/teamsankya/lotproject/dto/LotBean.java:44:	Field comments are required
-src/main/java/com/teamsankya/lotproject/dto/LotBean.java:48:	Field comments are required
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:51:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:52:	Avoid variables with short names like ch
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:52:	Local variable 'ch' could be declared final
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:63:	Parameter 'salesOrderNumber' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:71:	Parameter 'completionClass' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:79:	Parameter 'activeFlag' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/dto/LotBean.java:89:	Parameter 'customerId' is not assigned and could be declared final
 src/main/java/com/teamsankya/lotproject/exception/LotIdException.java:3:	Header comments are required
+src/main/java/com/teamsankya/lotproject/exception/LotIdException.java:4:	Parameter 'message' is not assigned and could be declared final
 src/main/java/com/teamsankya/lotproject/exception/LotIdException.java:4:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/service/LotService.java:18:	Avoid modifiers which are implied by the context
+src/main/java/com/teamsankya/lotproject/service/LotService.java:18:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/service/LotService.java:20:	Avoid modifiers which are implied by the context
+src/main/java/com/teamsankya/lotproject/service/LotService.java:20:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/com/teamsankya/lotproject/service/LotService.java:20:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:8:	Avoid unused imports such as 'org.springframework.stereotype.Service'
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:28:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:30:	Field comments are required
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:30:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:30:	Private field 'lotUtil' could be made final; it is only initialized in the declaration or constructor.
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:35:	Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:35:	Document empty constructor
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:43:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:43:	Parameter 'id' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:47:	Comment is too large: Too many lines
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:61:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:61:	Found 'UR'-anomaly for variable 'idValue' (lines '61'-'66').
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:61:	Parameter 'ids' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:61:	The method 'getIds(String)' has a NCSS line count of 17.
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:63:	Local variable 'list' could be declared final
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:64:	Local variable 'idValue' could be declared final
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:66:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:66:	Local variable 'id' could be declared final
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:67:	Local variable 'res' could be declared final
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:69:	Avoid if (x != y) ..; else ..;
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:70:	Avoid instantiating new objects inside loops
+src/main/java/com/teamsankya/lotproject/service/LotServiceImpl.java:75:	Avoid instantiating new objects inside loops
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:5:	Each class should declare at least one constructor
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:5:	Header comments are required
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:6:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:6:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:7:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:7:	Local variable 'id' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:7:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:8:	Consider simply returning the value vs storing it in local variable 'id'
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:11:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:11:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:13:	Avoid variables with short names like ch
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:13:	Local variable 'ch' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:14:	This for loop can be replaced by a foreach loop
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:15:	Avoid using Literals in Conditional Statements
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:16:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:25:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:25:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:25:	The method 'splCharValidate(String)' has a cyclomatic complexity of 10.
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:26:	Avoid variables with short names like ch
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:26:	Local variable 'ch' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:27:	This for loop can be replaced by a foreach loop
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:28:	Avoid variables with short names like a
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:28:	Local variable 'a' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:29:	Avoid empty if statements
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:29:	Useless parentheses.
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:29:	Useless parentheses.
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:29:	Useless parentheses.
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:32:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:40:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:40:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:41:	Avoid variables with short names like id
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:41:	Local variable 'id' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:42:	Consider simply returning the value vs storing it in local variable 'id'
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:45:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:45:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:47:	Avoid variables with short names like ch
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:47:	Local variable 'ch' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:48:	Avoid unnecessary if..then..else statements when returning booleans
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:48:	Avoid using Literals in Conditional Statements
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:49:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:56:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:56:	Public method and constructor comments are required
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:56:	The method 'validate(String)' has a NCSS line count of 13.
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:57:	Avoid variables with short names like s
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:57:	Local variable 's' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:58:	Local variable 'res' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:59:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:62:	Local variable 'isValid' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:63:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:66:	Local variable 'noOfChar' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:67:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:70:	Local variable 'finalRes' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:71:	Consider simply returning the value vs storing it in local variable 'finalRes'
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:74:	Comment is too large: Too many lines
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:85:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:87:	Avoid variables with short names like s
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:87:	Local variable 's' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:88:	System.out.println is used
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:89:	System.out.println is used
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:90:	Local variable 'finalRes' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:91:	System.out.println is used
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:96:	Comment is too large: Too many lines
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:106:	Parameter 'lotId' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:107:	Local variable 'res' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:108:	Local variable 'isValid' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:109:	Local variable 'noOfChar' could be declared final
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:110:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:110:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:110:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:110:	Avoid unnecessary if..then..else statements when returning booleans
+src/main/java/com/teamsankya/lotproject/util/LotUtil.java:111:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/teamsankya/lotproject/util/ToStringImpl.java:10:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/teamsankya/lotproject/util/ToStringImpl.java:11:	Parameter 'obj' is not assigned and could be declared final
+src/main/java/com/teamsankya/lotproject/util/ToStringImpl.java:11:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:8:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:8:	Header comments are required
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:9:	Field comments are required
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:9:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:9:	Private field 'tester' could be made final; it is only initialized in the declaration or constructor.
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:10:	Field comments are required
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:12:	JUnit 4 tests that set up tests should use the @Before annotation
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:14:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:17:	JUnit tests should include assert() or fail()
+src/test/java/com/teamsankya/lotproject/controllertest/LotControllerTest.java:17:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/daotest/LotDAOHibernateImplTest.java:3:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/daotest/LotDAOHibernateImplTest.java:3:	Header comments are required
+src/test/java/com/teamsankya/lotproject/daotest/LotDAOTest.java:3:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/daotest/LotDAOTest.java:3:	Header comments are required
+src/test/java/com/teamsankya/lotproject/dtotest/LotBeanTest.java:3:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/dtotest/LotBeanTest.java:3:	Header comments are required
+src/test/java/com/teamsankya/lotproject/exceptiontest/LotIdExceptionTest.java:3:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/exceptiontest/LotIdExceptionTest.java:3:	Header comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:3:	Avoid unused imports such as 'org.apache.commons.pool.impl.GenericKeyedObjectPool.Config'
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:9:	Avoid unused imports such as 'org.springframework.context.support.ClassPathXmlApplicationContext'
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:17:	Header comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:18:	Parameter 'args' is not assigned and could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:18:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:20:	Avoid excessively long variable names like applicationContext
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:20:	Local variable 'applicationContext' could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:21:	Local variable 'implTest' could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:22:	Local variable 'dao' could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:23:	System.out.println is used
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:24:	System.out.println is used
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:25:	System.out.println is used
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:28:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:32:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/DAOImpleConfig.java:36:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:3:	Avoid unused imports such as 'java.util.ArrayList'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:4:	Avoid unused imports such as 'java.util.Arrays'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:7:	Avoid unused imports such as 'org.junit.Assert'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:11:	Avoid unused imports such as 'org.springframework.context.support.ClassPathXmlApplicationContext'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:12:	Avoid unused imports such as 'org.springframework.core.LocalVariableTableParameterNameDiscoverer'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:14:	Avoid unused imports such as 'com.teamsankya.lotproject.dao.LotDAO'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:15:	Avoid unused imports such as 'com.teamsankya.lotproject.dao.LotDAOHibernateImpl'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:18:	Avoid unused imports such as 'com.teamsankya.lotproject.service.LotServiceImpl'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:19:	Avoid unused imports such as 'com.teamsankya.lotproject.util.LotUtil'
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:23:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:23:	Header comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:27:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:27:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:30:	Avoid excessively long variable names like applicationContext
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:30:	Local variable 'applicationContext' could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:31:	Local variable 'ids' could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:32:	Local variable 'servimp' could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:33:	Local variable 'actual' could be declared final
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:37:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:38:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:39:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:40:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:40:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:40:	Potential violation of Law of Demeter (method chain calls)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceImplTest.java:40:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceTest.java:3:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/servicetest/LotServiceTest.java:3:	Header comments are required
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:9:	Each class should declare at least one constructor
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:9:	Header comments are required
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:12:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:13:	Local variable 'lotUtil' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:14:	Local variable 'lotId' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:15:	Local variable 'upperCaseLotId' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:16:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:16:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:16:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:20:	JUnit tests should not contain more than 1 assert(s).
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:20:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:21:	Local variable 'lotUtil' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:24:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:24:	Use assertTrue(x)/assertFalse(x) instead of assertEquals(true, x)/assertEquals(false, x) or assertEquals(Boolean.TRUE, x)/assertEquals(Boolean.FALSE, x).
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:27:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:27:	Use assertTrue(x)/assertFalse(x) instead of assertEquals(true, x)/assertEquals(false, x) or assertEquals(Boolean.TRUE, x)/assertEquals(Boolean.FALSE, x).
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:31:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:32:	Local variable 'lotUtil' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:33:	Local variable 'lotId' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:34:	Local variable 'trim' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:35:	JUnit assertions should include a message
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:35:	Potential violation of Law of Demeter (object not created locally)
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:40:	Public method and constructor comments are required
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:41:	Local variable 'lotUtil' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:42:	Local variable 'lotId' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:43:	Local variable 'validate' could be declared final
+src/test/java/com/teamsankya/lotproject/utiltest/LotUtilTest.java:44:	JUnit assertions should include a message

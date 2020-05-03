@@ -1,0 +1,10 @@
+insert into lot_fact(lotId,active_flag,completion_class,customer_id,sales_order_number)
+values("1038d","y","tribute","12345","1234567");
+insert into lot_fact(lotId,active_flag,completion_class,customer_id,sales_order_number)
+values("1037d","n","cancel","97414","987654");
+insert into lot_fact(lotId,active_flag,completion_class,customer_id,sales_order_number)
+values("1036d","y","tribute","67890","56789");
+insert into lot_fact(lotId,active_flag,completion_class,customer_id,sales_order_number)
+values("1035d","n","tribute","23456","00706");
+insert into lot_fact(lotId,active_flag,completion_class,customer_id,sales_order_number)
+values("1034d","y","tribute","45678","19283");
